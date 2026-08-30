@@ -30,7 +30,7 @@ Round 1 named the gap. Round 2 adds the constraints that make reasoning real: he
 
 ---
 
-## 2. What Lithub is
+## 2. What BI.ai is
 
 An **analyst loop that runs as software**.
 
