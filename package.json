@@ -1,0 +1,36 @@
+{
+  "name": "lithub",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack --hostname 0.0.0.0 --port 4731",
+    "build": "next build --turbopack",
+    "start": "next start --hostname 0.0.0.0 --port 4731",
+    "lint": "eslint",
+    "verify": "tsx scripts/verify-engine.ts",
+    "test": "tsx scripts/engine.test.ts"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.37.0",
+    "next": "15.5.9",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "recharts": "^3.10.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.9",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.13",
+    "typescript": "^5"
+  },
+  "description": "Lithub — KPI intelligence-to-action engine for Accenture Innovation Challenge 2026"
+}

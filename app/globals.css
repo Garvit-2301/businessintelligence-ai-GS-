@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0c1210;
+  --ink-2: #141c18;
+  --ink-3: #1c2620;
+  --paper: #f3ede0;
+  --paper-2: #e7dfcf;
+  --rule: #d4cbb8;
+  --brass: #c4a574;
+  --brass-2: #e4d2aa;
+  --forest: #2f6b4f;
+  --signal: #3d8b6e;
+  --alert: #c45c3e;
+  --amber: #c4893e;
+  --muted: #8a8376;
+  --hairline: rgba(243, 237, 224, 0.12);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-rule: var(--rule);
+  --color-brass: var(--brass);
+  --color-brass-2: var(--brass-2);
+  --color-forest: var(--forest);
+  --color-signal: var(--signal);
+  --color-alert: var(--alert);
+  --color-amber: var(--amber);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-instrument);
+  --font-mono: var(--font-ibm);
+}
+
+html,
+body {
+  background: var(--ink);
+  color: var(--paper);
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+.serif {
+  font-family: var(--font-serif), "Times New Roman", serif;
+}
+
+::selection {
+  background: rgba(196, 165, 116, 0.35);
+  color: var(--paper);
+}
+
+.paper {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.hairline {
+  border-color: var(--hairline);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 0.45s ease both;
+}
