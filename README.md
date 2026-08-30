@@ -1,4 +1,4 @@
-# Lithub
+# BusinessIntelligence.ai
 
 ### From KPI movement to owned action
 
